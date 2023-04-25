@@ -18,12 +18,8 @@ const Algorithms = () => {
       <Card title="Turing Machine" link="/visualize/turing" img="" desc="" />
       <Card title="Convex Hull" link="/visualize/convexhull" img="" desc="" />
       <Card title="Path Finder" link="/visualize/pathfinder" img="" desc="" />
-      <Card
-        title="Recursive Sort"
-        link="/visualize/recursivesort"
-        img=""
-        desc=""
-      />
+      <Card title="Recursive Sort" link="/visualize/recursivesort" img="" desc=""/>
+      <Card title="Get Your Code" link="/visualize/textocode" img="" desc=""/>
     </div>
   );
 };

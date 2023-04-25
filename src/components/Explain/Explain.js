@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./exp.css";
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
-  apiKey:"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",
+  apiKey:"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",
 });
 delete configuration.baseOptions.headers['User-Agent'];
 const openai = new OpenAIApi(configuration);
