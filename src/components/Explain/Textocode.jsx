@@ -7,15 +7,15 @@ const configuration = new Configuration({
 delete configuration.baseOptions.headers['User-Agent'];
 const openai = new OpenAIApi(configuration);
 let textUp = "#include<iostream>/n using namespace std;/n int main()/n{/nint x=9,y=8;/ncout<<x+y;/n}/n";
-function Explain() {
+function Textocode() {
   const [explanation, setExplanation] = useState('');
 
   const explainCode = async () => {
-    textUp = document.getElementById("code").value;
+    textUp = document.getElementById("code1").value;
     try {
       const response = await openai.createCompletion({
         model: "text-davinci-003",
-        prompt: "Explain this code :" + textUp,
+        prompt: "Write a code for :" + textUp,
         temperature: 0,
         max_tokens: 150,
         top_p: 1.0,
@@ -34,7 +34,7 @@ function Explain() {
   return (
     <div>
       <textarea defaultValue={textUp}
-      id='code'/>
+      id='code1'/>
       <br/>
       <button onClick={explainCode}>Explain Code</button>
       <p>{explanation}</p>
@@ -42,4 +42,4 @@ function Explain() {
   );
 }
 
-export default Explain;
+export default Textocode;

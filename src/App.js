@@ -14,6 +14,7 @@ import Discussion from "./pages/Discussion";
 import Visualize from "./pages/Visualize";
 
 import Explain from "./components/Explain/Explain";
+import Textocode from "./components/Explain/Textocode";
 
 import Contests from "./pages/Contests";
 
@@ -59,7 +60,7 @@ function App() {
           <Route path="/visualize/turing" element={<><Header /><TuringMachine /></>} />
           <Route path="/visualize/puzzle" element={<><Header /><Puzzle /></>} />
           <Route path="/visualize/graph" element={<><Header /><Graph /></>} />
-          {/* <Route path="/test" element={<><Test/></>} /> */}
+          <Route path="/visualize/textocode" element={<><Header/><Textocode/></>} />
           
 
           <Route path="/explain" element={<><Header /><Explain /></>} />
